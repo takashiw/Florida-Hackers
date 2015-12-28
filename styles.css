@@ -1,0 +1,19 @@
+body {
+  background-image: url("images/bg-image-tinted.jpg");
+}
+
+
+h1 {
+  padding-top: 100px;
+  font-family: sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+
+h5 {
+  font-family: sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
