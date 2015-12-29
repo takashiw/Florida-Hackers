@@ -2,13 +2,19 @@ body {
   background-image: url("images/bg-image-tinted.jpg");
 }
 
+.title-row {
+  padding-top: 10%;
+}
 
 h1 {
-  padding-top: 100px;
-  font-family: sans-serif;
+  /*padding-top: 100px;*/
+  font-family: 'Montserrat';
   font-size: 80px;
   color: white;
-  text-align: center;
+  margin-left: -70px;
+  /*transform: 			translateY(50%);*/
+
+  /*text-align: center;*/
 }
 
 h5 {
@@ -16,4 +22,22 @@ h5 {
   font-size: 40px;
   color: white;
   text-align: center;
+}
+
+h6 {
+  font-style: italic;
+  font-size: 30px;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.florida-ball {
+
+  top: 50%;
+/*transform: 			translateY(35%);*/
+margin: auto;
+margin-right: 40px;
+
+  width:150px;
+  object-fit: contain;
 }
