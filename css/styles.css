@@ -94,6 +94,40 @@ right: 60px;
   object-fit: contain;
 }
 
+.heart {
+
+  position: fixed;
+  bottom: 10px;
+  left: 44%;
+	color: white;
+	font-size: 12px;
+	display: block;
+	text-align: center;
+	vertical-align: bottom;
+}
+.heart i {
+  color: blue;
+  text-decoration: none;
+}
+.heart .fa {
+  color: white;
+  margin: 0 3px;
+  font-size: 10px;
+  animation: pound 0.35s infinite alternate;
+  -webkit-animation: pound 0.35s infinite alternate;
+}
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
+}
+
 
 @media screen and (max-width: 992px) {
 	section#title .florida-ball, section#title h1 {
@@ -102,7 +136,7 @@ right: 60px;
     margin-right: 0;
 	}
   section#title .florida-ball {
-    content: url("images/FLBall-no-shadow.png");
+    content: url("../images/FLBall-no-shadow.png");
     position: absolute;
     top: -150px;
     left: -190px;
@@ -126,9 +160,10 @@ right: 60px;
 	}*/
 }
 
+
 @media screen and (max-width: 320px) {
   section#title .florida-ball {
-    content: url("images/FLBall-no-shadow.png");
+    content: url("../images/FLBall-no-shadow.png");
     position: absolute;
     top: -150px;
     left: -230px;
