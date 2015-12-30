@@ -48,6 +48,19 @@ h6 {
   left: -9%;
 }
 
+.fa-facebook {
+  margin-left: 60px;
+}
+
+.fa-slack {
+  margin-right: 60px;
+}
+
+.fa-slack, .fa-facebook {
+  color: white;
+  font-size: 80px;
+  padding-top: 40px;
+}
 
 .border-line-left, .border-line-right{
   position: absolute;
