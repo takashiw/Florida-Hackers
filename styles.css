@@ -1,19 +1,88 @@
 body {
-  background-image: url("images/bg-image-tinted.jpg");
+  /*background-image: url("images/bg-image-tinted.jpg");*/
+  background-color: #E28190;
 }
 
+.title-row {
+  padding-top: 15%;
+}
 
 h1 {
-  padding-top: 100px;
-  font-family: sans-serif;
-  font-size: 80px;
+  /*padding-top: 100px;*/
+  font-family: 'Montserrat';
+  font-size: 54px;
   color: white;
-  text-align: center;
+  margin-left: -70px;
+  /*transform: 			translateY(50%);*/
+
+  /*text-align: center;*/
+}
+
+h4 {
+  font-family: 'Montserrat';
+  color: white;
+  font-size: 20px;
 }
 
 h5 {
-  font-family: sans-serif;
-  font-size: 40px;
+  font-family: 'Helvetica';
+  font-weight: lighter;
+  font-size: 22px;
   color: white;
   text-align: center;
+}
+
+h6 {
+  font-style: italic;
+  font-size: 32px;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.border-line-left {
+  right: -9%;
+}
+
+
+.border-line-right {
+  left: -9%;
+}
+
+.fa-facebook {
+  margin-left: 60px;
+}
+
+.fa-slack {
+  margin-right: 60px;
+}
+
+.fa-slack, .fa-facebook {
+  color: white;
+  font-size: 80px;
+  padding-top: 40px;
+}
+
+.border-line-left, .border-line-right{
+  position: absolute;
+  height: 4px;
+  background: white;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  width: 200px;
+
+  top: 19px;
+  /*transform: translateY(50%);*/
+  vertical-align: middle;
+}
+
+.florida-ball {
+
+  top: 50%;
+/*transform: 			translateY(-5%);*/
+margin: auto;
+margin-right: 40px;
+
+  width:120px;
+  object-fit: contain;
 }
