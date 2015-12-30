@@ -30,6 +30,7 @@ h5 {
   font-size: 22px;
   color: white;
   text-align: center;
+  padding-top: 16px;
 }
 
 h6 {
@@ -62,6 +63,11 @@ h6 {
   padding-top: 40px;
 }
 
+.fa-slack:hover, .fa-facebook:hover {
+  opacity: 0.6;
+  border: 10px white;
+}
+
 .border-line-left, .border-line-right{
   position: absolute;
   height: 4px;
@@ -78,11 +84,54 @@ h6 {
 
 .florida-ball {
 
-  top: 50%;
+  position: absolute;
+  top: 45%;
 /*transform: 			translateY(-5%);*/
 margin: auto;
-margin-right: 40px;
+right: 60px;
 
   width:120px;
   object-fit: contain;
+}
+
+
+@media screen and (max-width: 992px) {
+	section#title .florida-ball, section#title h1 {
+		text-align: right;
+    margin-left: 0;
+    margin-right: 0;
+	}
+  section#title .florida-ball {
+    content: url("images/FLBall-no-shadow.png");
+    position: absolute;
+    top: -150px;
+    left: -190px;
+    width: 400px;
+  }
+  .border-line-right {
+    opacity: 0;
+    width: 0px;
+  }
+  .border-line-left{
+    width: 100%;
+    top: -10px;
+    left: 0px;
+  }
+  .fa-facebook {
+    position: absolute;
+    top: -115px;
+  }
+	/*section#splash #mlh-trust-badge {
+		right: 25px !important;
+	}*/
+}
+
+@media screen and (max-width: 320px) {
+  section#title .florida-ball {
+    content: url("images/FLBall-no-shadow.png");
+    position: absolute;
+    top: -150px;
+    left: -230px;
+    width: 400px;
+  }
 }
