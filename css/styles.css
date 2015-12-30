@@ -1,0 +1,172 @@
+body {
+  /*background-image: url("images/bg-image-tinted.jpg");*/
+  background-color: #E28190;
+}
+
+.title-row {
+  padding-top: 15%;
+}
+
+h1 {
+  /*padding-top: 100px;*/
+  font-family: 'Montserrat';
+  font-size: 54px;
+  color: white;
+  margin-left: -70px;
+  /*transform: 			translateY(50%);*/
+
+  /*text-align: center;*/
+}
+
+h4 {
+  font-family: 'Montserrat';
+  color: white;
+  font-size: 20px;
+}
+
+h5 {
+  font-family: 'Helvetica';
+  font-weight: lighter;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  padding-top: 16px;
+}
+
+h6 {
+  font-style: italic;
+  font-size: 32px;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.border-line-left {
+  right: -9%;
+}
+
+
+.border-line-right {
+  left: -9%;
+}
+
+.fa-facebook {
+  margin-left: 60px;
+}
+
+.fa-slack {
+  margin-right: 60px;
+}
+
+.fa-slack, .fa-facebook {
+  color: white;
+  font-size: 80px;
+  padding-top: 40px;
+}
+
+.fa-slack:hover, .fa-facebook:hover {
+  opacity: 0.6;
+  border: 10px white;
+}
+
+.border-line-left, .border-line-right{
+  position: absolute;
+  height: 4px;
+  background: white;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  width: 200px;
+
+  top: 19px;
+  /*transform: translateY(50%);*/
+  vertical-align: middle;
+}
+
+.florida-ball {
+
+  position: absolute;
+  top: 45%;
+/*transform: 			translateY(-5%);*/
+margin: auto;
+right: 60px;
+
+  width:120px;
+  object-fit: contain;
+}
+
+.heart {
+
+  position: fixed;
+  bottom: 10px;
+  left: 44%;
+	color: white;
+	font-size: 12px;
+	display: block;
+	text-align: center;
+	vertical-align: bottom;
+}
+.heart i {
+  color: blue;
+  text-decoration: none;
+}
+.heart .fa {
+  color: white;
+  margin: 0 3px;
+  font-size: 10px;
+  animation: pound 0.35s infinite alternate;
+  -webkit-animation: pound 0.35s infinite alternate;
+}
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+	section#title .florida-ball, section#title h1 {
+		text-align: right;
+    margin-left: 0;
+    margin-right: 0;
+	}
+  section#title .florida-ball {
+    content: url("../images/FLBall-no-shadow.png");
+    position: absolute;
+    top: -150px;
+    left: -190px;
+    width: 400px;
+  }
+  .border-line-right {
+    opacity: 0;
+    width: 0px;
+  }
+  .border-line-left{
+    width: 100%;
+    top: -10px;
+    left: 0px;
+  }
+  .fa-facebook {
+    position: absolute;
+    top: -115px;
+  }
+	/*section#splash #mlh-trust-badge {
+		right: 25px !important;
+	}*/
+}
+
+
+@media screen and (max-width: 320px) {
+  section#title .florida-ball {
+    content: url("../images/FLBall-no-shadow.png");
+    position: absolute;
+    top: -150px;
+    left: -230px;
+    width: 400px;
+  }
+}
