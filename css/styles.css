@@ -98,7 +98,7 @@ right: 60px;
 
   position: fixed;
   bottom: 10px;
-  left: 44%;
+  left: 43%;
 	color: white;
 	font-size: 12px;
 	display: block;
@@ -108,6 +108,7 @@ right: 60px;
 .heart i {
   color: blue;
   text-decoration: none;
+  text-align: center;
 }
 .heart .fa {
   color: white;
@@ -115,6 +116,7 @@ right: 60px;
   font-size: 10px;
   animation: pound 0.35s infinite alternate;
   -webkit-animation: pound 0.35s infinite alternate;
+  text-align: center;
 }
 
 @-webkit-keyframes pound {
