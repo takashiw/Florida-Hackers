@@ -228,4 +228,27 @@ section#hackathons h1 {
   margin-left: 0;
   color: black;
   font-size: 35px;
+  margin-top: 12px;
+}
+
+section#hackathons h3 {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-left: 10px;
+  font-family: "Helvetica";
+}
+
+section#hackathons h4 {
+  color: black;
+  font-size: 25px;
+  padding-top: 3px;
+  text-align: center;
+}
+
+section#hackathons h2 {
+  font-size: 90px;
+  font-family: 'Helvetica';
+  text-align: center;
+  margin-top: -20px;
+
 }
