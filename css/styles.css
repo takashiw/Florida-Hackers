@@ -1,6 +1,8 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    background-color: #EDEDED;
+
 }
 
 
@@ -217,6 +219,8 @@ right: 60px;
   height: 125px;
   width: 96%;
   padding: 0;
+  margin-bottom: 0;
+  margin-right: 2%;
 }
 
 #date {
@@ -228,7 +232,7 @@ right: 60px;
 
 #hackathon-logo {
   position: absolute;
-  right: 100px;
+  right: 82px;
 }
 
 .hackathon-thumb {
@@ -300,8 +304,8 @@ section#hackathons .fa {
 section#hackathons h1 {
   margin-left: 0;
   color: black;
-  font-size: 40px;
-  margin-top: 12px;
+  font-size: 35px;
+  margin-top: 16px;
   margin-left: -10px;
 }
 
@@ -313,17 +317,17 @@ section#hackathons h3 {
 }
 
 section#hackathons h4 {
-  font-size: 25px;
-  padding-top: 1px;
+  font-size: 23px;
+  padding-top: 6px;
   text-align: center;
   color: #E28190;
 
 }
 
 section#hackathons h2 {
-  font-size: 90px;
-  /*font-family: 'Helvetica';*/
+  font-size: 75px;
+  font-family: 'Montserrat';
   text-align: center;
-  margin-top: -20px;
+  margin-top: -15px;
 
 }
