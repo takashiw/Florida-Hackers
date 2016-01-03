@@ -24,7 +24,6 @@ html, body {
   width: 50vw;
   padding: 0;
   margin: 0;
-
 }
 
 .title-row {
@@ -73,7 +72,7 @@ h6 {
   left: -9%;
 }
 
-.fa-facebook {
+section#left-col .fa-facebook {
   margin-left: 60px;
 }
 
@@ -81,7 +80,7 @@ h6 {
   margin-right: 60px;
 }
 
-.fa-slack, .fa-facebook {
+section#left-col .fa-slack, section#left-col .fa-facebook {
   color: white;
   font-size: 80px;
   padding-top: 40px;
@@ -227,30 +226,86 @@ right: 60px;
   /*width: 110px;*/
 }
 
+#hackathon-logo {
+  position: fixed;
+  right: -157px;
+}
+
 .hackathon-thumb {
   height: 220px;
   width: 340px;
   position: absolute;
   top: -20px;
-  left: -17px;
+  /*left: -17px;*/
+  right: 0px;
   object-fit: contain;
   /*background-color: black;*/
 clip: rect(0px,170px,145px,0px);
 -webkit-filter: brightness(0) invert(1);
+  /*position: relative;*/
 
 }
+
+#social-media {
+  /*width: 30px;*/
+  /*position: absolute;*/
+  padding: 0;
+  padding-top: 5px;
+  margin: 0;
+  margin-left: -40px;
+  /*clip: rect(0px, 00px, 40px, 0px);*/
+  transition-property: margin-left;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.social-app {
+  background-color: white;
+  left: 0px;
+  height: 35px;
+  width: 35px;
+  padding-left: 0px;
+  margin-left: 0px;
+  position: absolute;
+  clip: rect(0px, 40px, 40px, 40px);
+  transition-property: clip;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  border-radius: 2px;
+
+}
+
+#hackathon-card:hover #social-media{
+  margin-left: 5px;
+}
+
+#hackathon-card:hover .social-app {
+  clip: rect(0px, 40px, 40px, 0px);
+}
+
+section#hackathons .fa {
+  color: #E28190;
+    /*font-size: 80px;*/
+  /*padding-top: 40px;*/
+  font-size: 22px;
+  margin-left: 6px;
+  margin-top: 7px;
+  text-align: center;
+}
+
 
 section#hackathons h1 {
   margin-left: 0;
   color: black;
   font-size: 40px;
   margin-top: 12px;
+  margin-left: -10px;
 }
 
 section#hackathons h3 {
   font-size: 20px;
   margin-top: -5px;
-  margin-left: 10px;
+  margin-left: 0px;
   font-family: "Helvetica";
 }
 
