@@ -29,7 +29,7 @@ html, body {
 }
 
 .title-row {
-  padding-top: 15%;
+  padding-top: 30vh;
 }
 
 h1 {
@@ -66,12 +66,12 @@ h6 {
 }
 
 .border-line-left {
-  right: -9%;
+  right: -4%;
 }
 
 
 .border-line-right {
-  left: -9%;
+  left: -4%;
 }
 
 section#left-col .fa-facebook {
@@ -100,7 +100,7 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  width: 200px;
+  width: 190px;
 
   top: 19px;
   /*transform: translateY(50%);*/
