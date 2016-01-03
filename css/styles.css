@@ -227,8 +227,8 @@ right: 60px;
 }
 
 #hackathon-logo {
-  position: static;
-  right: -157px;
+  position: absolute;
+  right: 100px;
 }
 
 .hackathon-thumb {
@@ -237,7 +237,6 @@ right: 60px;
   position: absolute;
   top: -20px;
   /*left: -17px;*/
-  right: 0px;
   object-fit: contain;
   /*background-color: black;*/
 clip: rect(0px,170px,145px,0px);
