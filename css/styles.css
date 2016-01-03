@@ -303,7 +303,7 @@ section#hackathons .fa {
 
 section#hackathons h1 {
   margin-left: 0;
-  color: black;
+  color: white;
   font-size: 35px;
   margin-top: 16px;
   margin-left: -10px;
@@ -314,6 +314,8 @@ section#hackathons h3 {
   margin-top: -5px;
   margin-left: 0px;
   font-family: "Helvetica";
+  color: white;
+
 }
 
 section#hackathons h4 {
@@ -321,6 +323,7 @@ section#hackathons h4 {
   padding-top: 6px;
   text-align: center;
   color: #E28190;
+
 
 }
 
