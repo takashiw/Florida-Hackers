@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 .left {
     float: left;
@@ -117,7 +122,7 @@ right: 60px;
 
   position: fixed;
   bottom: 10px;
-  left: 43%;
+  /*left: 43%;*/
 	color: white;
 	font-size: 12px;
 	display: block;
@@ -207,7 +212,7 @@ right: 60px;
 
 #hackathon-card {
   margin: 2%;
-  background-color: white;
+  background-color: #E28190;
   position: absolute;
   left: 0px;
   height: 125px;
@@ -215,39 +220,51 @@ right: 60px;
   padding: 0;
 }
 
-.hackathon-thumb {
+#date {
+  background-color: white;
   height: 125px;
-  width: 100px;
+  color: #E28190;
+  /*width: 110px;*/
+}
+
+.hackathon-thumb {
+  height: 220px;
+  width: 340px;
   position: absolute;
-  left: 0;
+  top: -20px;
+  left: -17px;
   object-fit: contain;
-  background-color: black;
+  /*background-color: black;*/
+clip: rect(0px,170px,145px,0px);
+-webkit-filter: brightness(0) invert(1);
+
 }
 
 section#hackathons h1 {
   margin-left: 0;
   color: black;
-  font-size: 35px;
+  font-size: 40px;
   margin-top: 12px;
 }
 
 section#hackathons h3 {
-  font-size: 18px;
-  margin-top: 0px;
+  font-size: 20px;
+  margin-top: -5px;
   margin-left: 10px;
   font-family: "Helvetica";
 }
 
 section#hackathons h4 {
-  color: black;
   font-size: 25px;
-  padding-top: 3px;
+  padding-top: 1px;
   text-align: center;
+  color: #E28190;
+
 }
 
 section#hackathons h2 {
   font-size: 90px;
-  font-family: 'Helvetica';
+  /*font-family: 'Helvetica';*/
   text-align: center;
   margin-top: -20px;
 
