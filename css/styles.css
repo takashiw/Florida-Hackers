@@ -243,7 +243,7 @@ right: 60px;
   /*left: -17px;*/
   object-fit: contain;
   /*background-color: black;*/
-clip: rect(0px,170px,145px,0px);
+clip: rect(20px,170px,145px,0px);
 -webkit-filter: brightness(0) invert(1);
   /*position: relative;*/
 
