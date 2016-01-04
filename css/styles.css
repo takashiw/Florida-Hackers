@@ -1,10 +1,35 @@
-body {
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #EDEDED;
+
+}
+
+
+.left {
+    float: left;
+}
+.w50 {
+    width: 50vw;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+#left-info {
   /*background-image: url("images/bg-image-tinted.jpg");*/
+  position: fixed;
   background-color: #E28190;
+  height: 100vh;
+  width: 50vw;
+  padding: 0;
+  margin: 0;
 }
 
 .title-row {
-  padding-top: 15%;
+  padding-top: 30vh;
 }
 
 h1 {
@@ -41,15 +66,15 @@ h6 {
 }
 
 .border-line-left {
-  right: -9%;
+  right: -4%;
 }
 
 
 .border-line-right {
-  left: -9%;
+  left: -4%;
 }
 
-.fa-facebook {
+section#left-col .fa-facebook {
   margin-left: 60px;
 }
 
@@ -57,7 +82,7 @@ h6 {
   margin-right: 60px;
 }
 
-.fa-slack, .fa-facebook {
+section#left-col .fa-slack, section#left-col .fa-facebook {
   color: white;
   font-size: 80px;
   padding-top: 40px;
@@ -75,7 +100,7 @@ h6 {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  width: 200px;
+  width: 190px;
 
   top: 19px;
   /*transform: translateY(50%);*/
@@ -98,7 +123,7 @@ right: 60px;
 
   position: fixed;
   bottom: 10px;
-  left: 43%;
+  /*left: 43%;*/
 	color: white;
 	font-size: 12px;
 	display: block;
@@ -171,4 +196,141 @@ right: 60px;
     left: -230px;
     width: 400px;
   }
+}
+
+#hackathons {
+  background-color: #EDEDED;
+  /*background-color: gray;*/
+  /*width:50%;*/
+  /*background-image: url("images/bg-image-tinted.jpg");*/
+  height: 100vh;
+  width: 50vw;
+  padding: 0;
+  margin-left: 50vw;
+  padding-left: 0vw;
+  /*width: 50vw;*/
+}
+
+#hackathon-card {
+  margin: 2%;
+  background-color: #E28190;
+  position: relative;
+  left: 0px;
+  height: 125px;
+  width: 96%;
+  padding: 0;
+  margin-bottom: 0;
+  margin-right: 2%;
+}
+
+#date {
+  background-color: white;
+  height: 125px;
+  color: #E28190;
+  /*width: 110px;*/
+}
+
+#hackathon-logo {
+  position: absolute;
+  right: 82px;
+}
+
+.hackathon-thumb {
+  height: 220px;
+  width: 340px;
+  position: absolute;
+  top: -20px;
+  /*left: -17px;*/
+  object-fit: contain;
+  /*background-color: black;*/
+clip: rect(20px,170px,145px,0px);
+-webkit-filter: brightness(0) invert(1);
+  /*position: relative;*/
+
+}
+
+#social-media {
+  /*width: 30px;*/
+  /*position: absolute;*/
+  padding: 0;
+  padding-top: 5px;
+  margin: 0;
+  margin-left: -40px;
+  /*clip: rect(0px, 00px, 40px, 0px);*/
+  transition-property: margin-left;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.social-app {
+  background-color: white;
+  left: 0px;
+  height: 35px;
+  width: 35px;
+  padding-left: 0px;
+  margin-left: 0px;
+  position: absolute;
+  clip: rect(0px, 40px, 40px, 40px);
+  transition-property: clip;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  border-radius: 2px;
+
+}
+
+section#hackathons .row {
+  /*position: relative;*/
+}
+
+#hackathon-card:hover #social-media{
+  margin-left: 5px;
+}
+
+#hackathon-card:hover .social-app {
+  clip: rect(0px, 40px, 40px, 0px);
+}
+
+section#hackathons .fa {
+  color: #E28190;
+    /*font-size: 80px;*/
+  /*padding-top: 40px;*/
+  font-size: 22px;
+  margin-left: 6px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+
+section#hackathons h1 {
+  margin-left: 0;
+  color: white;
+  font-size: 35px;
+  margin-top: 16px;
+  margin-left: -10px;
+}
+
+section#hackathons h3 {
+  font-size: 20px;
+  margin-top: -5px;
+  margin-left: 0px;
+  font-family: "Helvetica";
+  color: white;
+
+}
+
+section#hackathons h4 {
+  font-size: 23px;
+  padding-top: 6px;
+  text-align: center;
+  color: #E28190;
+
+
+}
+
+section#hackathons h2 {
+  font-size: 75px;
+  font-family: 'Montserrat';
+  text-align: center;
+  margin-top: -15px;
+
 }
