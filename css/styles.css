@@ -1,11 +1,13 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    /*overflow-y: hidden;*/
+
     padding: 20px 60px;
     background-color: #E28190;
 
     /*background-image: url("../images/screen.png");*/
-background-size: contain;
+    background-size: contain;
 }
 
 
@@ -69,9 +71,10 @@ section#title-head h5 {
 
 #content {
   padding: 90px 35px;
+  padding-right: 10px;
 }
 
-section#content .text-box {
+.text-box {
   padding-top: 25px;
   color: white;
 }
@@ -82,7 +85,7 @@ section#content h4 {
   font-size: 20px;
 }
 
-section#content .border-line{
+.border-line{
   height: 4px;
   background: white;
   -moz-border-radius: 50px;
@@ -111,6 +114,7 @@ section#content #link-box {
   padding: 0;
   width: 45%;
   border-radius: 4px;
+  margin-top: 10px;
 }
 
 section#content h4{
@@ -131,6 +135,11 @@ section#content #link-box:hover {
 
 section#content #link-box:hover h4{
   color: #E28190;
+}
+
+section#content .sponsors {
+  padding-top:100px;
+  margin-left: -10px;
 }
 
 h4 {
@@ -197,7 +206,7 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
 
 .heart {
 
-  position: fixed;
+  position: relative;
   bottom: 10px;
   /*left: 43%;*/
 	color: white;
@@ -274,14 +283,17 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
   }
 }
 
+/*HACKATHON CARDS SECTION*/
+
 #hackathons {
-  background-color: #EDEDED;
+  /*background-color: #EDEDED;*/
   /*background-color: gray;*/
   /*width:50%;*/
   /*background-image: url("images/bg-image-tinted.jpg");*/
   /*height: 100vh;*/
   /*width: 50vw;*/
   padding: 0;
+  width: 35vw;
   /*margin-left: 50vw;*/
   /*padding-left: 0vw;*/
   /*width: 50vw;*/
@@ -292,34 +304,52 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
   background-color: #E28190;
   position: relative;
   left: 0px;
-  height: 125px;
+  height: 100px;
   width: 96%;
   padding: 0;
   margin-bottom: 0;
   margin-right: 2%;
+  /*opacity: 0.5;*/
 }
+
+/*----DATE CONTENT----*/
 
 #date {
   background-color: white;
-  height: 125px;
+  height: 100px;
   color: #E28190;
-  /*width: 110px;*/
+  width: 120px;
+}
+
+section#hackathons h4 {
+  font-size: 18px;
+  padding-top: 6px;
+  text-align: center;
+  color: #E28190;
+}
+
+section#hackathons h2 {
+  font-size: 60px;
+  font-family: 'Montserrat';
+  text-align: center;
+  margin-top: -15px;
+
 }
 
 #hackathon-logo {
   position: absolute;
-  right: 82px;
+  right: 0px;
 }
 
 .hackathon-thumb {
-  height: 220px;
-  width: 340px;
+  height: 180px;
+  width: 260px;
   position: absolute;
   top: -20px;
   /*left: -17px;*/
   object-fit: contain;
   /*background-color: black;*/
-clip: rect(20px,170px,145px,0px);
+clip: rect(20px,170px,120px,0px);
 -webkit-filter: brightness(0) invert(1);
   /*position: relative;*/
 
@@ -341,7 +371,7 @@ clip: rect(20px,170px,145px,0px);
 .social-app {
   background-color: white;
   left: 0px;
-  height: 35px;
+  height: 20px;
   width: 35px;
   padding-left: 0px;
   margin-left: 0px;
@@ -352,6 +382,19 @@ clip: rect(20px,170px,145px,0px);
   transition-timing-function: ease;
   border-radius: 2px;
 
+}
+
+section#events {
+  padding: 0px 0px;
+  margin-left: 20px;
+  margin-top: -100px;
+}
+
+section#events .border-line{
+  margin-left: 0px;
+}
+
+section#hackathons {
 }
 
 section#hackathons .row {
@@ -380,33 +423,15 @@ section#hackathons .fa {
 section#hackathons h1 {
   margin-left: 0;
   color: white;
-  font-size: 35px;
-  margin-top: 16px;
+  font-size: 30px;
+  margin-top: 10px;
   margin-left: -10px;
 }
 
 section#hackathons h3 {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: -5px;
   margin-left: 0px;
   font-family: "Helvetica";
   color: white;
-
-}
-
-section#hackathons h4 {
-  font-size: 23px;
-  padding-top: 6px;
-  text-align: center;
-  color: #E28190;
-
-
-}
-
-section#hackathons h2 {
-  font-size: 75px;
-  font-family: 'Montserrat';
-  text-align: center;
-  margin-top: -15px;
-
 }
