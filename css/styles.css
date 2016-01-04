@@ -1,8 +1,11 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #EDEDED;
+    padding: 20px 60px;
+    /*background-color: #E28190;*/
 
+    background-image: url("../images/screen.png");
+background-size: contain;
 }
 
 
@@ -32,15 +35,36 @@ html, body {
   padding-top: 30vh;
 }
 
-h1 {
+.florida-ball {
+  position: absolute;
+  top: 45%;
+  /*transform: 			translateY(-5%);*/
+  margin: auto;
+  /*right: 60px;*/
+  width:140px;
+  object-fit: contain;
+}
+
+section#title-head h1 {
   /*padding-top: 100px;*/
   font-family: 'Montserrat';
-  font-size: 54px;
+  font-size: 40px;
   color: white;
-  margin-left: -70px;
-  /*transform: 			translateY(50%);*/
+  text-align: left;
+  margin: 0px;
+  padding-left: 35px;
+  margin-top: 20px;
+}
 
-  /*text-align: center;*/
+section#title-head h5 {
+  font-family: 'Muli';
+  font-weight: lighter;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  margin-top: -12px;
+  padding-left: 36px;
+
 }
 
 h4 {
@@ -107,17 +131,7 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
   vertical-align: middle;
 }
 
-.florida-ball {
 
-  position: absolute;
-  top: 45%;
-/*transform: 			translateY(-5%);*/
-margin: auto;
-right: 60px;
-
-  width:120px;
-  object-fit: contain;
-}
 
 .heart {
 
@@ -203,11 +217,11 @@ right: 60px;
   /*background-color: gray;*/
   /*width:50%;*/
   /*background-image: url("images/bg-image-tinted.jpg");*/
-  height: 100vh;
-  width: 50vw;
+  /*height: 100vh;*/
+  /*width: 50vw;*/
   padding: 0;
-  margin-left: 50vw;
-  padding-left: 0vw;
+  /*margin-left: 50vw;*/
+  /*padding-left: 0vw;*/
   /*width: 50vw;*/
 }
 
