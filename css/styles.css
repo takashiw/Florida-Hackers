@@ -1,13 +1,14 @@
-html, body {
+body {
     max-width: 100%;
     overflow-x: hidden;
     /*overflow-y: hidden;*/
 
-    padding: 20px 60px;
+    padding: 20px 100px;
     background-color: #E28190;
+    width: 100vw;
 
-    /*background-image: url("../images/screen.png");*/
-    background-size: contain;
+    /*background-image: url("../images/screen.png");
+    background-size: contain;*/
 }
 
 
@@ -19,6 +20,7 @@ html, body {
 }
 
 .container {
+  width: auto;
   padding: 0;
   margin: 0;
 }
@@ -338,7 +340,7 @@ section#hackathons h2 {
 
 #hackathon-logo {
   position: absolute;
-  right: 0px;
+  right: 70px;
 }
 
 .hackathon-thumb {
@@ -349,7 +351,7 @@ section#hackathons h2 {
   /*left: -17px;*/
   object-fit: contain;
   /*background-color: black;*/
-clip: rect(20px,170px,120px,0px);
+clip: rect(20px,130px,120px,0px);
 -webkit-filter: brightness(0) invert(1);
   /*position: relative;*/
 
@@ -423,15 +425,15 @@ section#hackathons .fa {
 section#hackathons h1 {
   margin-left: 0;
   color: white;
-  font-size: 30px;
-  margin-top: 10px;
-  margin-left: -10px;
+  font-size: 28px;
+  margin-top: 14px;
+  /*margin-left: 0px;*/
 }
 
 section#hackathons h3 {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: -5px;
-  margin-left: 0px;
+  margin-left: 10px;
   font-family: "Helvetica";
   color: white;
 }
