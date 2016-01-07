@@ -117,12 +117,18 @@ section#content #link-box {
   width: 45%;
   border-radius: 4px;
   margin-top: 10px;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 section#content h4{
   font-size: 22px;
   margin: 8px 5px;
   text-align: center;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 section#content .fa{
@@ -362,8 +368,9 @@ clip: rect(20px,130px,120px,0px);
   /*position: absolute;*/
   padding: 0;
   padding-top: 5px;
-  margin: 0;
+  margin: 0 0px;
   margin-left: -40px;
+
   /*clip: rect(0px, 00px, 40px, 0px);*/
   transition-property: margin-left;
   transition-duration: 0.2s;
@@ -373,18 +380,22 @@ clip: rect(20px,130px,120px,0px);
 .social-app {
   background-color: white;
   left: 0px;
-  height: 20px;
-  width: 35px;
+  height: 26px;
+  width: 30px;
   padding-left: 0px;
   margin-left: 0px;
+  padding: 0;
   position: absolute;
   clip: rect(0px, 40px, 40px, 40px);
   transition-property: clip;
   transition-duration: 0.2s;
   transition-timing-function: ease;
   border-radius: 2px;
-
 }
+/*
+social-app:hover {
+
+}*/
 
 section#events {
   padding: 0px 0px;
@@ -415,9 +426,9 @@ section#hackathons .fa {
   color: #E28190;
     /*font-size: 80px;*/
   /*padding-top: 40px;*/
-  font-size: 22px;
+  font-size: 18px;
   margin-left: 6px;
-  margin-top: 7px;
+  margin-top: 5px;
   text-align: center;
 }
 
