@@ -192,7 +192,7 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
 }
 
 .fa-slack:hover, .fa-facebook:hover {
-  opacity: 0.6;
+  /*opacity: 0.6;*/
   border: 10px white;
 }
 
@@ -387,15 +387,20 @@ clip: rect(20px,130px,120px,0px);
   padding: 0;
   position: absolute;
   clip: rect(0px, 40px, 40px, 40px);
-  transition-property: clip;
+  transition-property: clip, background-color, border;
   transition-duration: 0.2s;
   transition-timing-function: ease;
   border-radius: 2px;
 }
-/*
-social-app:hover {
 
-}*/
+.social-app:hover {
+  background-color: #E28190;
+  border: 2px white;
+  border-style: solid;
+}
+
+
+
 
 section#events {
   padding: 0px 0px;
@@ -430,8 +435,24 @@ section#hackathons .fa {
   margin-left: 6px;
   margin-top: 5px;
   text-align: center;
+  transition-property: color, margin-left, margin-top;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+
 }
 
+section#hackathons .social-app:hover .fa{
+
+  color: white;
+  margin-left: 4px;
+  margin-top: 3px;
+}
+
+section#hackathons .social-app:hover .fa-facebook{
+  color: white;
+  margin-left: 12px;
+  margin-top: 3px;
+}
 
 section#hackathons h1 {
   margin-left: 0;
