@@ -294,6 +294,7 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
 /*HACKATHON CARDS SECTION*/
 
 #hackathons {
+
   /*background-color: #EDEDED;*/
   /*background-color: gray;*/
   /*width:50%;*/
@@ -308,6 +309,8 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
 }
 
 #hackathon-card {
+  /*background:url("../images/swamphacks.png") top right repeat; background-attachment:fixed;*/
+
   margin: 2%;
   background-color: #E28190;
   position: relative;
@@ -346,7 +349,9 @@ section#hackathons h2 {
 
 #hackathon-logo {
   position: absolute;
-  right: 70px;
+  /*width: 100%;*/
+  text-align: right;
+
 }
 
 .hackathon-thumb {
@@ -354,11 +359,14 @@ section#hackathons h2 {
   width: 260px;
   position: absolute;
   top: -20px;
+  margin-left: -130px;
+  /*float: right;*/
   /*left: -17px;*/
   object-fit: contain;
   /*background-color: black;*/
-clip: rect(20px,130px,120px,0px);
--webkit-filter: brightness(0) invert(1);
+  clip: rect(20px,130px,120px,0px);
+  -webkit-filter: brightness(0) invert(1);
+/*position: relative;*/
   /*position: relative;*/
 
 }
@@ -395,8 +403,8 @@ clip: rect(20px,130px,120px,0px);
 
 .social-app:hover {
   background-color: #E28190;
-  border: 2px white;
-  border-style: solid;
+  /*border: 2px white;
+  border-style: solid;*/
 }
 
 
@@ -444,14 +452,14 @@ section#hackathons .fa {
 section#hackathons .social-app:hover .fa{
 
   color: white;
-  margin-left: 4px;
-  margin-top: 3px;
+  /*margin-left: 4px;
+  margin-top: 3px;*/
 }
 
 section#hackathons .social-app:hover .fa-facebook{
   color: white;
-  margin-left: 12px;
-  margin-top: 3px;
+  /*margin-left: 12px;
+  margin-top: 3px;*/
 }
 
 section#hackathons h1 {
