@@ -1,8 +1,12 @@
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-    /*overflow-y: hidden;*/
+html, body {
+  overflow-x: hidden;
 
+}
+
+body {
+     max-width: 100%;
+    /*overflow-y: hidden;*/
+    color: white;
     padding: 20px 100px;
     background-color: #E28190;
     width: 100vw;
@@ -11,6 +15,10 @@ body {
     background-size: contain;*/
 }
 
+a, a:hover, a:active {
+  color: inherit;
+  text-decoration: inherit;
+}
 
 .left {
     float: left;
@@ -93,7 +101,7 @@ section#content h4 {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  width: 420px;
+  width: 100%;
   margin-left: -14px;
   margin-bottom: 14px;
 }
@@ -101,7 +109,7 @@ section#content h4 {
 section#content p {
   font-weight: lighter;
   font-family: 'Muli';
-  font-size: 15px;
+  font-size: 18px;
   margin-right: 24px;
   color: white;
 }
@@ -114,7 +122,7 @@ section#content #link-box {
   height: auto;
   margin-right: 20px;
   padding: 0;
-  width: 45%;
+  width: auto;
   border-radius: 4px;
   margin-top: 10px;
   transition-property: background-color;
@@ -124,7 +132,7 @@ section#content #link-box {
 
 section#content h4{
   font-size: 22px;
-  margin: 8px 5px;
+  margin: 8px 10px;
   text-align: center;
   transition-property: color;
   transition-duration: 0.3s;
@@ -181,9 +189,9 @@ h6 {
   left: -4%;
 }
 
-section#left-col .fa-facebook {
+/*section#left-col .fa-facebook {
   margin-left: 60px;
-}
+}*/
 
 section#left-col .fa-slack, section#left-col .fa-facebook {
   color: white;
@@ -203,7 +211,7 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  width: 190px;
+  width: 300px;
 
   top: 19px;
   /*transform: translateY(50%);*/
@@ -211,31 +219,6 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
 }
 
 
-
-.heart {
-
-  position: relative;
-  bottom: 10px;
-  /*left: 43%;*/
-	color: white;
-	font-size: 12px;
-	display: block;
-	text-align: center;
-	vertical-align: bottom;
-}
-.heart i {
-  color: blue;
-  text-decoration: none;
-  text-align: center;
-}
-.heart .fa {
-  color: white;
-  margin: 0 3px;
-  font-size: 10px;
-  animation: pound 0.35s infinite alternate;
-  -webkit-animation: pound 0.35s infinite alternate;
-  text-align: center;
-}
 
 @-webkit-keyframes pound {
   to {
@@ -249,36 +232,6 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
 }
 
 
-@media screen and (max-width: 992px) {
-	section#title .florida-ball, section#title h1 {
-		text-align: right;
-    margin-left: 0;
-    margin-right: 0;
-	}
-  section#title .florida-ball {
-    content: url("../images/FLBall-no-shadow.png");
-    position: absolute;
-    top: -150px;
-    left: -190px;
-    width: 400px;
-  }
-  .border-line-right {
-    opacity: 0;
-    width: 0px;
-  }
-  .border-line-left{
-    width: 100%;
-    top: -10px;
-    left: 0px;
-  }
-  .fa-facebook {
-    position: absolute;
-    top: -115px;
-  }
-	/*section#splash #mlh-trust-badge {
-		right: 25px !important;
-	}*/
-}
 
 
 @media screen and (max-width: 320px) {
@@ -294,6 +247,7 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
 /*HACKATHON CARDS SECTION*/
 
 #hackathons {
+
   /*background-color: #EDEDED;*/
   /*background-color: gray;*/
   /*width:50%;*/
@@ -308,6 +262,8 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
 }
 
 #hackathon-card {
+  /*background:url("../images/swamphacks.png") top right repeat; background-attachment:fixed;*/
+
   margin: 2%;
   background-color: #E28190;
   position: relative;
@@ -327,6 +283,7 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
   height: 100px;
   color: #E28190;
   width: 120px;
+  margin: 0;
 }
 
 section#hackathons h4 {
@@ -346,7 +303,9 @@ section#hackathons h2 {
 
 #hackathon-logo {
   position: absolute;
-  right: 70px;
+  /*width: 100%;*/
+  text-align: right;
+
 }
 
 .hackathon-thumb {
@@ -354,11 +313,14 @@ section#hackathons h2 {
   width: 260px;
   position: absolute;
   top: -20px;
+  margin-left: -130px;
+  /*float: right;*/
   /*left: -17px;*/
   object-fit: contain;
   /*background-color: black;*/
-clip: rect(20px,130px,120px,0px);
--webkit-filter: brightness(0) invert(1);
+  clip: rect(20px,130px,120px,0px);
+  -webkit-filter: brightness(0) invert(1);
+/*position: relative;*/
   /*position: relative;*/
 
 }
@@ -395,14 +357,15 @@ clip: rect(20px,130px,120px,0px);
 
 .social-app:hover {
   background-color: #E28190;
-  border: 2px white;
-  border-style: solid;
+  /*border: 2px white;
+  border-style: solid;*/
 }
 
 
 
 
 section#events {
+  width: auto;
   padding: 0px 0px;
   margin-left: 20px;
   margin-top: -100px;
@@ -444,14 +407,14 @@ section#hackathons .fa {
 section#hackathons .social-app:hover .fa{
 
   color: white;
-  margin-left: 4px;
-  margin-top: 3px;
+  /*margin-left: 4px;
+  margin-top: 3px;*/
 }
 
 section#hackathons .social-app:hover .fa-facebook{
   color: white;
-  margin-left: 12px;
-  margin-top: 3px;
+  /*margin-left: 12px;
+  margin-top: 3px;*/
 }
 
 section#hackathons h1 {
@@ -468,4 +431,159 @@ section#hackathons h3 {
   margin-left: 10px;
   font-family: "Helvetica";
   color: white;
+}
+
+
+
+.heart {
+  position: relativ;
+  bottom: 10px;
+  /*left: 43%;*/
+	color: white;
+	font-size: 12px;
+	display: block;
+  margin-top: -20px;
+	text-align: left;
+	vertical-align: bottom;
+  margin-left: 30px;
+}
+
+.heart i {
+  color: blue;
+  text-decoration: none;
+  text-align: right;
+}
+
+.heart .fa {
+  color: white;
+  margin: 0 3px;
+  font-size: 12px;
+  animation: pound 0.35s infinite alternate;
+  -webkit-animation: pound 0.35s infinite alternate;
+  transition-property: font-size, margin-top;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+
+.heart .fa:hover {
+  font-size: 20px;
+  margin-top: -20px;
+
+}
+
+@media screen and (max-width: 992px) {
+  body {
+      max-width: 100%;
+      overflow-x: hidden;
+      padding: 50px 5px;
+      background-color: #E28190;
+
+      /*background-image: url("../images/screen.png");
+      background-size: contain;*/
+  }
+
+	section#title-head .florida-ball, section#title-head h1 {
+		text-align: right;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 55px;
+	}
+
+  section#title-head h5 {
+    text-align: center;
+    font-size: 0px;
+    padding: 0;
+    padding-top: 30px;
+  }
+  section#title-head .florida-ball {
+    content: url("../images/FLBall-no-shadow.png");
+    position: absolute;
+    top: -130px;
+    left: -190px;
+    width: 400px;
+  }
+
+  .border-line-right {
+    opacity: 0;
+    width: 0px;
+  }
+  .border-line-left{
+    width: 100%;
+    top: -10px;
+    left: 0px;
+  }
+  .fa-facebook {
+    /*position: absolute;*/
+    /*top: -115px;*/
+  }
+
+  #content {
+    padding: 0 10px;;
+  }
+
+  section#content .text-box {
+    padding: 10px;;
+  }
+
+  section#content .border-line {
+    margin-left: 0;
+  }
+
+  section#content p {
+    margin-right: 0;
+  }
+
+  section#content .sponsors {
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  section#content #link-box {
+    margin-right: 0;
+  }
+
+  section#events {
+    margin: 0 5px;
+  }
+
+  .text-box  h3{
+    text-align: center;
+  }
+
+  #hackathons {
+    width: auto;
+  }
+/*
+  #hackathon-card{
+    height: 200px;
+  }*/
+
+  section#hackathons .hackathon-thumb {
+    opacity: 0.4;
+  }
+
+  section#hackathons #date {
+    width: 100px;
+  }
+
+  section#hackathons h1 {
+    font-size: 24px;
+  }
+
+  section#hackathons h3 {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .heart {
+    top: 100vh;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+	/*section#splash #mlh-trust-badge {
+		right: 25px !important;
+	}*/
 }
