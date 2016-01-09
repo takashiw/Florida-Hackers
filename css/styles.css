@@ -93,7 +93,7 @@ section#content h4 {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  width: 420px;
+  width: 100%;
   margin-left: -14px;
   margin-bottom: 14px;
 }
@@ -203,7 +203,7 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  width: 190px;
+  width: 300px;
 
   top: 19px;
   /*transform: translateY(50%);*/
@@ -211,31 +211,6 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
 }
 
 
-
-.heart {
-
-  position: relative;
-  bottom: 10px;
-  /*left: 43%;*/
-	color: white;
-	font-size: 12px;
-	display: block;
-	text-align: center;
-	vertical-align: bottom;
-}
-.heart i {
-  color: blue;
-  text-decoration: none;
-  text-align: center;
-}
-.heart .fa {
-  color: white;
-  margin: 0 3px;
-  font-size: 10px;
-  animation: pound 0.35s infinite alternate;
-  -webkit-animation: pound 0.35s infinite alternate;
-  text-align: center;
-}
 
 @-webkit-keyframes pound {
   to {
@@ -476,4 +451,40 @@ section#hackathons h3 {
   margin-left: 10px;
   font-family: "Helvetica";
   color: white;
+}
+
+
+
+.heart {
+
+  position: relativ;
+  bottom: 10px;
+  /*left: 43%;*/
+	color: white;
+	font-size: 12px;
+	display: block;
+	text-align: right;
+	vertical-align: bottom;
+}
+.heart i {
+  color: blue;
+  text-decoration: none;
+  text-align: right;
+}
+section#content .heart .fa {
+  color: white;
+  margin: 0 3px;
+  font-size: 12px;
+  animation: pound 0.35s infinite alternate;
+  -webkit-animation: pound 0.35s infinite alternate;
+  text-align: center;
+  transition-property: font-size, margin-top;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+
+section#content .heart .fa:hover {
+  font-size: 20px;
+  margin-top: -20px;
+
 }
