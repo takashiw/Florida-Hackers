@@ -34,8 +34,8 @@ a, a:hover, a:active {
 }
 
 .col-md-6 {
-  margin-right: 10px;
-  width: 49.5%;
+  /*margin-right: 10px;
+  width: 49.5%;*/
 }
 
 #left-info {
@@ -106,7 +106,7 @@ section#content h4 {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  width: 100%;
+  width: 94%;
   margin-left: -14px;
   margin-bottom: 14px;
 }
@@ -238,7 +238,6 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
 
 
 
-
 @media screen and (max-width: 320px) {
   section#title .florida-ball {
     content: url("../images/FLBall-no-shadow.png");
@@ -256,6 +255,8 @@ section#left-col .fa-slack, section#left-col .fa-facebook {
   padding: 0;
   width: 35vw;
 }
+
+
 
 #hackathon-card {
   /*background:url("../images/swamphacks.png") top right repeat; background-attachment:fixed;*/
@@ -368,8 +369,8 @@ section#events {
 }
 
 section#events .border-line{
-  margin-left: 0px;
-  width: 35vw;
+  /*margin-left: -10px;*/
+  width: 36vw;
 
 }
 
@@ -462,6 +463,36 @@ section#content h3 {
   font-size: 20px;
   margin-top: -20px;
 
+}
+
+section#title-head h1 {
+  /*padding-top: 100px;*/
+  font-family: 'Montserrat';
+  font-size: 40px;
+  color: white;
+  text-align: left;
+  margin: 0px;
+  padding-left: 35px;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1100px) {
+  #hackathons {
+
+    padding: 0;
+    width: 100%;
+  }
+  section#events .border-line{
+    /*margin-left: -10px;*/
+    width: 100%;
+
+  }
+  section#content #link-box {
+
+    width: 100%;
+
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -581,4 +612,16 @@ section#content h3 {
 	/*section#splash #mlh-trust-badge {
 		right: 25px !important;
 	}*/
+
+
+}
+
+@media screen and (max-width: 340px) {
+  section#title-head h1 {
+    font-size: 50px;
+    padding-left: 65px;
+    padding-top: 20px;
+    margin-right: -10px;
+  }
+
 }
