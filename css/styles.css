@@ -336,6 +336,8 @@ section#hackathons h2 {
   transition-timing-function: ease;
 }
 
+
+
 .social-app {
   background-color: white;
   left: 0px;
@@ -345,7 +347,7 @@ section#hackathons h2 {
   margin-left: 0px;
   padding: 0;
   position: absolute;
-  clip: rect(0px, 40px, 40px, 40px);
+  clip: rect(0px, 40px, 88px, 40px);
   transition-property: clip, background-color, border;
   transition-duration: 0.2s;
   transition-timing-function: ease;
@@ -379,7 +381,7 @@ section#events .border-line{
 }
 
 #hackathon-card:hover .social-app {
-  clip: rect(0px, 40px, 40px, 0px);
+  clip: rect(0px, 40px, 88px, 0px);
 }
 
 section#hackathons .fa {
